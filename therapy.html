@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Request Form</title>
+</head>
+<body>
+
+    <h2>Therapy Request Form</h2>
+    <form action="/submit_therapy_request" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Therapy Details Section -->
+        <h3>Therapy Details</h3>
+
+        <label for="therapyType">Type of Therapy:</label><br>
+        <select id="therapyType" name="therapyType" required>
+            <option value="individual">Individual Therapy</option>
+            <option value="couples">Couples Therapy</option>
+            <option value="family">Family Therapy</option>
+            <option value="group">Group Therapy</option>
+        </select><br><br>
+
+        <label for="preferredDate">Preferred Date for Session:</label><br>
+        <input type="date" id="preferredDate" name="preferredDate" required><br><br>
+
+        <label for="preferredTime">Preferred Time for Session:</label><br>
+        <input type="time" id="preferredTime" name="preferredTime" required><br><br>
+
+        <label for="sessionGoals">Goals for Therapy Session:</label><br>
+        <textarea id="sessionGoals" name="sessionGoals" rows="6" cols="50" required></textarea><br><br>
+
+        <!-- Medical History Section -->
+        <h3>Medical History (optional)</h3>
+
+        <label for="medicalHistory">Any relevant medical history or conditions:</label><br>
+        <textarea id="medicalHistory" name="medicalHistory" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Consent Section -->
+        <label>
+            <input type="checkbox" id="consent" name="consent" required>
+            I consent to the collection and use of my personal information as outlined in the <a href="/privacy_policy">Privacy Policy</a>.
+        </label><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Request">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+    <form action="/submit_survey" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <!-- Survey Questions Section -->
+        <h3>Survey Questions</h3>
+
+        <label for="satisfaction">How satisfied are you with our service?</label><br>
+        <select id="satisfaction" name="satisfaction" required>
+            <option value="very_satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very_dissatisfied">Very Dissatisfied</option>
+        </select><br><br>
+
+        <label>What features do you like the most? (Select all that apply):</label><br>
+        <input type="checkbox" id="feature1" name="features" value="feature1">
+        <label for="feature1">Feature 1</label><br>
+        <input type="checkbox" id="feature2" name="features" value="feature2">
+        <label for="feature2">Feature 2</label><br>
+        <input type="checkbox" id="feature3" name="features" value="feature3">
+        <label for="feature3">Feature 3</label><br><br>
+
+        <label for="improvement">What areas do you think need improvement?</label><br>
+        <textarea id="improvement" name="improvement" rows="4" cols="50"></textarea><br><br>
+
+        <label for="recommend">Would you recommend our service to others?</label><br>
+        <input type="radio" id="yes" name="recommend" value="yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="recommend" value="no" required>
+        <label for="no">No</label><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Any additional comments or suggestions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Survey">
+    </form>
+
+</body>
+</html>

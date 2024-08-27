@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Form</title>
+</head>
+<body>
+
+    <h2>EMI Form</h2>
+    <form action="/submit_emi" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- EMI Details Section -->
+        <h3>EMI Details</h3>
+
+        <label for="loanAmount">Loan Amount:</label><br>
+        <input type="number" id="loanAmount" name="loanAmount" step="0.01" required><br><br>
+
+        <label for="interestRate">Annual Interest Rate (%):</label><br>
+        <input type="number" id="interestRate" name="interestRate" step="0.01" required><br><br>
+
+        <label for="loanTerm">Loan Term (in years):</label><br>
+        <input type="number" id="loanTerm" name="loanTerm" required><br><br>
+
+        <label for="paymentFrequency">Payment Frequency:</label><br>
+        <select id="paymentFrequency" name="paymentFrequency" required>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="semi_annually">Semi-Annually</option>
+            <option value="annually">Annually</option>
+        </select><br><br>
+
+        <label for="emiType">Type of EMI:</label><br>
+        <select id="emiType" name="emiType" required>
+            <option value="fixed">Fixed EMI</option>
+            <option value="reducing_balance">Reducing Balance EMI</option>
+        </select><br><br>
+
+        <label for="firstPaymentDate">First Payment Date:</label><br>
+        <input type="date" id="firstPaymentDate" name="firstPaymentDate" required><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Comments (optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit EMI Details">
+    </form>
+
+</body>
+</html>

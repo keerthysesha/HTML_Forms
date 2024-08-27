@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+</head>
+<body>
+
+    <h2>Subscription Form</h2>
+    <form action="/submit_subscription" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number (optional):</label><br>
+        <input type="tel" id="contact" name="contact"><br><br>
+
+        <!-- Subscription Details Section -->
+        <h3>Subscription Details</h3>
+
+        <label for="subscriptionType">Type of Subscription:</label><br>
+        <select id="subscriptionType" name="subscriptionType" required>
+            <option value="newsletter">Newsletter</option>
+            <option value="updates">Updates</option>
+            <option value="offers">Special Offers</option>
+            <option value="all">All</option>
+        </select><br><br>
+
+        <label for="frequency">Subscription Frequency:</label><br>
+        <select id="frequency" name="frequency" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="custom">Custom</option>
+        </select><br><br>
+
+        <label for="customFrequency">Custom Frequency (if applicable):</label><br>
+        <input type="text" id="customFrequency" name="customFrequency"><br><br>
+
+        <!-- Consent Section -->
+        <label>
+            <input type="checkbox" id="consent" name="consent" required>
+            I agree to the <a href="/privacy_policy">Privacy Policy</a>
+        </label><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Subscribe">
+    </form>
+
+</body>
+</html>

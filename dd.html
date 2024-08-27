@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Draft Form</title>
+</head>
+<body>
+
+    <h2>Demand Draft Form</h2>
+    <form action="/submit_dd_request" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <h3>Demand Draft Details</h3>
+
+        <label for="ddAmount">Amount:</label><br>
+        <input type="number" id="ddAmount" name="ddAmount" required><br><br>
+
+        <label for="payeeName">Payee Name:</label><br>
+        <input type="text" id="payeeName" name="payeeName" required><br><br>
+
+        <label for="ddPurpose">Purpose of DD:</label><br>
+        <input type="text" id="ddPurpose" name="ddPurpose" required><br><br>
+
+        <label for="ddDate">Date of DD:</label><br>
+        <input type="date" id="ddDate" name="ddDate" required><br><br>
+
+        <label for="bankBranch">Bank Branch:</label><br>
+        <input type="text" id="bankBranch" name="bankBranch" required><br><br>
+
+        <input type="submit" value="Submit Request">
+    </form>
+
+</body>
+</html>

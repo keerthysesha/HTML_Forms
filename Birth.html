@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Registration Form</title>
+</head>
+<body>
+
+    <h2>Birth Registration Form</h2>
+    <form action="/submit_birth_registration" method="post">
+        <h3>Child Information</h3>
+
+        <label for="childName">Child's Full Name:</label><br>
+        <input type="text" id="childName" name="childName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="birthPlace">Place of Birth:</label><br>
+        <input type="text" id="birthPlace" name="birthPlace" required><br><br>
+
+        <h3>Parent Information</h3>
+
+        <label for="fatherName">Father's Full Name:</label><br>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <label for="motherName">Mother's Full Name:</label><br>
+        <input type="text" id="motherName" name="motherName" required><br><br>
+
+        <label for="address">Residential Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <h3>Additional Information</h3>
+
+        <label for="religion">Religion:</label><br>
+        <input type="text" id="religion" name="religion" required><br><br>
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

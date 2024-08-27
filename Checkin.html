@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-In Form</title>
+</head>
+<body>
+
+    <h2>Check-In Form</h2>
+    <form action="/submit_checkin" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <h3>Check-In Details</h3>
+
+        <label for="checkInDate">Check-In Date:</label><br>
+        <input type="date" id="checkInDate" name="checkInDate" required><br><br>
+
+        <label for="checkInTime">Check-In Time:</label><br>
+        <input type="time" id="checkInTime" name="checkInTime" required><br><br>
+
+        <label for="purpose">Purpose of Visit:</label><br>
+        <textarea id="purpose" name="purpose" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="employee">Employee/Department to Visit:</label><br>
+        <input type="text" id="employee" name="employee" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

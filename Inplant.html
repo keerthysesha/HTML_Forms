@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Plant Application Form</title>
+</head>
+<body>
+
+    <h2>In-Plant Application Form</h2>
+    <form action="/submit_inplant" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Educational Background Section -->
+        <h3>Educational Background</h3>
+
+        <label for="institution">Institution Name:</label><br>
+        <input type="text" id="institution" name="institution" required><br><br>
+
+        <label for="course">Course/Branch:</label><br>
+        <input type="text" id="course" name="course" required><br><br>
+
+        <label for="yearOfStudy">Year of Study:</label><br>
+        <input type="number" id="yearOfStudy" name="yearOfStudy" required><br><br>
+
+        <label for="gpa">GPA/Percentage:</label><br>
+        <input type="text" id="gpa" name="gpa" required><br><br>
+
+        <!-- In-Plant Details Section -->
+        <h3>In-Plant Details</h3>
+
+        <label for="preferredStartDate">Preferred Start Date:</label><br>
+        <input type="date" id="preferredStartDate" name="preferredStartDate" required><br><br>
+
+        <label for="preferredDuration">Preferred Duration (weeks):</label><br>
+        <input type="number" id="preferredDuration" name="preferredDuration" required><br><br>
+
+        <label for="

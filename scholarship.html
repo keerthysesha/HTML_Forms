@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+</head>
+<body>
+
+    <h2>Scholarship Application Form</h2>
+    <form action="/submit_scholarship_application" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Academic Information Section -->
+        <h3>Academic Information</h3>
+
+        <label for="currentInstitution">Current Institution:</label><br>
+        <input type="text" id="currentInstitution" name="currentInstitution" required><br><br>
+
+        <label for="currentCourse">Current Course/Program:</label><br>
+        <input type="text" id="currentCourse" name="currentCourse" required><br><br>
+
+        <label for="gpa">Current GPA/Grade:</label><br>
+        <input type="number" id="gpa" name="gpa" step="0.01" required><br><br>
+
+        <label for="previousInstitution">Previous Institution (if applicable):</label><br>
+        <input type="text" id="previousInstitution" name="previousInstitution"><br><br>
+
+        <label for="previousGPA">Previous GPA/Grade (if applicable):</label><br>
+        <input type="number" id="previousGPA" name="previousGPA" step="0.01"><br><br>
+
+        <!-- Scholarship Details Section -->
+        <h3>Scholarship Details</h3>
+
+        <label for="scholarshipName">Scholarship Name:</label><br>
+        <input type="text" id="scholarshipName" name="scholarshipName" required><br><br>
+
+        <label for="reason">Reason for Applying:</label><br>
+        <textarea id="reason" name="reason" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="achievements">Achievements and Extracurricular Activities:</label><br>
+        <textarea id="achievements" name="achievements" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <inp

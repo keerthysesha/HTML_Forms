@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Form</title>
+</head>
+<body>
+
+    <h2>Delivery Form</h2>
+    <form action="/submit_delivery_request" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <h3>Delivery Details</h3>
+
+        <label for="deliveryAddress">Delivery Address:</label><br>
+        <textarea id="deliveryAddress" name="deliveryAddress" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="deliveryDate">Preferred Delivery Date:</label><br>
+        <input type="date" id="deliveryDate" name="deliveryDate" required><br><br>
+
+        <label for="deliveryTime">Preferred Delivery Time:</label><br>
+        <input type="time" id="deliveryTime" name="deliveryTime" required><br><br>
+
+        <label for="itemDescription">Description of Items:</label><br>
+        <textarea id="itemDescription" name="itemDescription" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="specialInstructions">Special Instructions (optional):</label><br>
+        <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Delivery Request">
+    </form>
+
+</body>
+</html>

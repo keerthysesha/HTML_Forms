@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Form</title>
+</head>
+<body>
+
+    <h2>Ticket Form</h2>
+    <form action="/submit_ticket" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- Ticket Details Section -->
+        <h3>Ticket Details</h3>
+
+        <label for="ticketType">Type of Ticket:</label><br>
+        <select id="ticketType" name="ticketType" required>
+            <option value="support">Support</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="event">Event</option>
+        </select><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="priority">Priority:</label><br>
+        <select id="priority" name="priority" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="attachments">Attachments (optional):</label><br>
+        <input type="file" id="attachments" name="attachments"><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Ticket">
+    </form>
+
+</body>
+</html>

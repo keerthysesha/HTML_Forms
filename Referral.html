@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Form</title>
+</head>
+<body>
+
+    <h2>Referral Form</h2>
+    <form action="/submit_referral" method="post">
+        <!-- Referrer Information Section -->
+        <h3>Referrer Information</h3>
+
+        <label for="referrerName">Full Name:</label><br>
+        <input type="text" id="referrerName" name="referrerName" required><br><br>
+
+        <label for="referrerEmail">Email Address:</label><br>
+        <input type="email" id="referrerEmail" name="referrerEmail" required><br><br>
+
+        <label for="referrerContact">Contact Number:</label><br>
+        <input type="tel" id="referrerContact" name="referrerContact" required><br><br>
+
+        <!-- Referral Details Section -->
+        <h3>Referral Details</h3>
+
+        <label for="referralName">Name of the Person/Service to be Referred:</label><br>
+        <input type="text" id="referralName" name="referralName" required><br><br>
+
+        <label for="referralEmail">Email Address of the Referral:</label><br>
+        <input type="email" id="referralEmail" name="referralEmail" required><br><br>
+
+        <label for="referralContact">Contact Number of the Referral:</label><br>
+        <input type="tel" id="referralContact" name="referralContact" required><br><br>
+
+        <label for="referralReason">Reason for Referral:</label><br>
+        <textarea id="referralReason" name="referralReason" rows="6" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Referral">
+    </form>
+
+</body>
+</html>

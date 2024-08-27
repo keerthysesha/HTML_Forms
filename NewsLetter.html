@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription Form</title>
+</head>
+<body>
+
+    <h2>Newsletter Subscription Form</h2>
+    <form action="/subscribe_newsletter" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name (optional):</label><br>
+        <input type="text" id="fullName" name="fullName"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Subscription Preferences Section -->
+        <h3>Subscription Preferences</h3>
+
+        <label for="frequency">Preferred Frequency:</label><br>
+        <select id="frequency" name="frequency">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br><br>
+
+        <label for="topics">Preferred Topics (optional):</label><br>
+        <textarea id="topics" name="topics" rows="4" cols="50" placeholder="e.g., Technology, Health"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Subscribe">
+    </form>
+
+</body>
+</html>

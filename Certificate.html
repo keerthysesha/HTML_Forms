@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Application Form</title>
+</head>
+<body>
+
+    <h2>Certificate Application Form</h2>
+    <form action="/submit_certificate_application" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <h3>Address Information</h3>
+
+        <label for="address">Residential Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <h3>Certificate Details</h3>
+
+        <label for="certificateType">Type of Certificate:</label><br>
+        <select id="certificateType" name="certificateType" required>
+            <option value="birth_certificate">Birth Certificate</option>
+            <option value="marriage_certificate">Marriage Certificate</option>
+            <option value="death_certificate">Death Certificate</option>
+            <option value="academic_certificate">Academic Certificate</option>
+            <option value="experience_certificate">Experience Certificate</option>
+        </select><br><br>
+
+        <label for="purpose">Purpose of Certificate:</label><br>
+        <textarea id="purpose" name="purpose" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concern Form</title>
+</head>
+<body>
+
+    <h2>Concern Form</h2>
+    <form action="/submit_concern" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <h3>Concern Details</h3>
+
+        <label for="concernType">Type of Concern:</label><br>
+        <select id="concernType" name="concernType" required>
+            <option value="safety">Safety</option>
+            <option value="health">Health</option>
+            <option value="environment">Environment</option>
+            <option value="service">Service</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="concernDate">Date of Concern:</label><br>
+        <input type="date" id="concernDate" name="concernDate" required><br><br>
+
+        <label for="details">Details of Concern:</label><br>
+        <textarea id="details" name="details" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="attachments">Attach Supporting Documents (optional):</label><br>
+        <input type="file" id="attachments" name="attachments"><br><br>
+
+        <input type="submit" value="Submit Concern">
+    </form>
+
+</body>
+</html>

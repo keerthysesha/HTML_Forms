@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quota Form</title>
+</head>
+<body>
+
+    <h2>Quota Request Form</h2>
+    <form action="/submit_quota_request" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- Quota Details Section -->
+        <h3>Quota Details</h3>
+
+        <label for="resource">Resource Type:</label><br>
+        <select id="resource" name="resource" required>
+            <option value="storage">Storage</option>
+            <option value="bandwidth">Bandwidth</option>
+            <option value="compute">Compute</option>
+            <option value="api">API Requests</option>
+        </select><br><br>
+
+        <label for="currentQuota">Current Quota:</label><br>
+        <input type="number" id="currentQuota" name="currentQuota" step="0.01" required><br><br>
+
+        <label for="requestedQuota">Requested Quota:</label><br>
+        <input type="number" id="requestedQuota" name="requestedQuota" step="0.01" required><br><br>
+
+        <label for="justification">Justification for Increase:</label><br>
+        <textarea id="justification" name="justification" rows="6" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input ty

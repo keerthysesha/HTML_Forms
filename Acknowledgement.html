@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acknowledgment Form</title>
+</head>
+<body>
+
+    <h2>Acknowledgment Form</h2>
+    <form enctype="multipart/form-data">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="employeeId">Employee/Student ID:</label><br>
+        <input type="text" id="employeeId" name="employeeId" required><br><br>
+
+        <label for="department">Department/School:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <h3>Acknowledgment</h3>
+
+        <p>I, <strong>[Full Name]</strong>, hereby acknowledge that I have received and understood the following:</p>
+        <ul>
+            <li>Company/School Policies</li>
+            <li>Code of Conduct</li>
+            <li>Safety Guidelines</li>
+            <li>Confidentiality Agreement</li>
+        </ul>
+
+        <label for="acknowledge">Do you acknowledge the receipt and understanding of the above documents?</label><br>
+        <input type="radio" id="yes" name="acknowledge" value="yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="acknowledge" value="no" required>
+        <label for="no">No</label><br><br>
+
+        <label for="comments">Comments (optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="signature">Signature:</label><br>
+        <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

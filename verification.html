@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+</head>
+<body>
+
+    <h2>Verification Form</h2>
+    <form action="/submit_verification" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- Verification Details Section -->
+        <h3>Verification Details</h3>
+
+        <label for="verificationType">Type of Verification:</label><br>
+        <select id="verificationType" name="verificationType" required>
+            <option value="identity">Identity Verification</option>
+            <option value="address">Address Verification</option>
+            <option value="document">Document Verification</option>
+        </select><br><br>
+
+        <label for="verificationId">Verification ID/Reference Number:</label><br>
+        <input type="text" id="verificationId" name="verificationId" required><br><br>
+
+        <label for="verificationDate">Date of Verification:</label><br>
+        <input type="date" id="verificationDate" name="verificationDate" required><br><br>
+
+        <label for="verificationDescription">Description:</label><br>
+        <textarea id="verificationDescription" name="verificationDescription" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="attachments">Attachments (optional):</label><br>
+        <input type="file" id="attachments" name="attachments"><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Verification">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Application Form</title>
+</head>
+<body>
+
+    <h2>PAN Card Application Form</h2>
+    <form action="/submit_pan_card" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="fatherName">Father's Name:</label><br>
+        <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- PAN Card Details Section -->
+        <h3>PAN Card Details</h3>
+
+        <label for="panType">Type of PAN Card:</label><br>
+        <select id="panType" name="panType" required>
+            <option value="individual">Individual</option>
+            <option value="company">Company</option>
+            <option value="partnership">Partnership Firm</option>
+        </select><br><br>
+
+        <label for="aadhaarNumber">Aadhaar Number (if applicable):</label><br>
+        <input type="text" id="aadhaarNumber" name="aadhaarNumber"><br><br>
+
+        <label for="documents">Upload Documents:</label><br>
+        <input type="file" id="documents" name="documents" required><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Application">
+    </form>
+
+</body>
+</html>

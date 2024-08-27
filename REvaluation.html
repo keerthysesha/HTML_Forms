@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revaluation Form</title>
+</head>
+<body>
+
+    <h2>Revaluation Form</h2>
+    <form action="/submit_revaluation" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="studentId">Student ID:</label><br>
+        <input type="text" id="studentId" name="studentId" required><br><br>
+
+        <!-- Examination Details Section -->
+        <h3>Examination Details</h3>
+
+        <label for="examName">Name of Examination:</label><br>
+        <input type="text" id="examName" name="examName" required><br><br>
+
+        <label for="examDate">Date of Examination:</label><br>
+        <input type="date" id="examDate" name="examDate" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="originalMarks">Original Marks Awarded:</label><br>
+        <input type="number" id="originalMarks" name="originalMarks" step="0.01" required><br><br>
+
+        <label for="requestedMarks">Requested Marks:</label><br>
+        <input type="number" id="requestedMarks" name="requestedMarks" step="0.01" required><br><br>
+
+        <label for="reason">Reason for Revaluation:</label><br>
+        <textarea id="reason" name="reason" rows="6" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Request">
+    </form>
+
+</body>
+</html>

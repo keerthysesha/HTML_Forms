@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Registration Form</title>
+</head>
+<body>
+
+    <h2>Community Registration Form</h2>
+    <form action="/submit_community_registration" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <h3>Address Information</h3>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="postalCode">Postal Code:</label><br>
+        <input type="text" id="postalCode" name="postalCode" required><br><br>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <h3>Community Information</h3>
+
+        <label for="interest">Area of Interest:</label><br>
+        <select id="interest" name="interest" required>
+            <option value="volunteering">Volunteering</option>
+            <option value="events">Events</option>
+            <option value="networking">Networking</option>
+            <option value="education">Education</option>
+            <option value="support">Support</option>
+        </select><br><br>
+
+        <label for="howHeard">How Did You Hear About Us?</label><br>
+        <input type="text" id="howHeard" name="howHeard" required><br><br>
+
+        <label for="whyJoin">Why Do You Want to Join?</label><br>
+        <textarea id="whyJoin" name="whyJoin" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+
+</body>
+</html>

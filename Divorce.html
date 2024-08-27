@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Form</title>
+</head>
+<body>
+
+    <h2>Divorce Form</h2>
+    <form action="/submit_divorce" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Spouse Information Section -->
+        <h3>Spouse Information</h3>
+
+        <label for="spouseName">Spouse's Full Name:</label><br>
+        <input type="text" id="spouseName" name="spouseName" required><br><br>
+
+        <label for="spouseEmail">Spouse's Email Address:</label><br>
+        <input type="email" id="spouseEmail" name="spouseEmail" required><br><br>
+
+        <label for="spousePhone">Spouse's Phone Number:</label><br>
+        <input type="tel" id="spousePhone" name="spousePhone" required><br><br>
+
+        <label for="marriageDate">Date of Marriage:</label><br>
+        <input type="date" id="marriageDate" name="marriageDate" required><br><br>
+
+        <label for="separationDate">Date of Separation:</label><br>
+        <input type="date" id="separationDate" name="separationDate" required><br><br>
+
+        <label for="divorceReason">Reason for Divorce:</label><br>
+        <textarea id="divorceReason" name="divorceReason" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="children">Children (if any):</label><br>
+        <textarea id="children" name="children" rows="4" cols="50"></textarea><br><br>
+
+        <label for="propertyDivision">Property Division Details:</label><br>
+        <textarea id="propertyDivision" name="propertyDivision" rows="4" cols="50"></textarea><br><br>
+
+        <label for="alimony">Alimony Request (if any):</label><br>
+        <textarea id="alimony" name="alimony" rows="4" cols="50"></textarea><br><br>
+
+        <label for="additionalComments">Additional Comments:</label><br>
+        <textarea id="additionalComments" name="additionalComments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Divorce Request">
+    </form>
+
+</body>
+</html>

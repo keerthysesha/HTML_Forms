@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Form</title>
+</head>
+<body>
+
+    <h2>Intake Form</h2>
+    <form action="/submit_intake" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Emergency Contact Section -->
+        <h3>Emergency Contact</h3>
+
+        <label for="emergencyContactName">Emergency Contact Name:</label><br>
+        <input type="text" id="emergencyContactName" name="emergencyContactName" required><br><br>
+
+        <label for="emergencyContactPhone">Emergency Contact Phone:</label><br>
+        <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" required><br><br>
+
+        <label for="relationship">Relationship to Emergency Contact:</label><br>
+        <input type="text" id="relationship" name="relationship" required><br><br>
+
+        <!-- Medical History Section -->
+        <h3>Medical History</h3>
+
+        <label for="medicalConditions">Current Medical Conditions (if any):</label><br>
+        <textarea id="medicalConditions" name="medicalConditions" rows="4" cols="50"></textarea><br><br>
+
+        <label for="medications">Current Medications (if any):</label><br>
+        <textarea id="medications" name="medications" rows="4" cols="50"></textarea><br><br>
+
+        <label for="allergies">Allergies (if any):</label><br>
+        <textarea id="allergies" name="allergies" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></

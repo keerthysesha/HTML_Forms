@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detention Form</title>
+</head>
+<body>
+
+    <h2>Detention Form</h2>
+    <form action="/submit_detention" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="studentName">Student Name:</label><br>
+        <input type="text" id="studentName" name="studentName" required><br><br>
+
+        <label for="studentId">Student ID:</label><br>
+        <input type="text" id="studentId" name="studentId" required><br><br>
+
+        <label for="grade">Grade:</label><br>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Detention Details Section -->
+        <h3>Detention Details</h3>
+
+        <label for="detentionDate">Date of Detention:</label><br>
+        <input type="date" id="detentionDate" name="detentionDate" required><br><br>
+
+        <label for="detentionTime">Time of Detention:</label><br>
+        <input type="time" id="detentionTime" name="detentionTime" required><br><br>
+
+        <label for="reason">Reason for Detention:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="duration">Duration (hours):</label><br>
+        <input type="number" id="duration" name="duration" step="0.5" required><br><br>
+
+        <label for="supervisorName">Supervisor's Name:</label><br>
+        <input type="text" id="supervisorName" name="supervisorName" required><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Comments (optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Detention">
+    </form>
+
+</body>
+</html>

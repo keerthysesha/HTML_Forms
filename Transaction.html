@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+</head>
+<body>
+
+    <h2>Transaction Form</h2>
+    <form action="/submit_transaction" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- Transaction Details Section -->
+        <h3>Transaction Details</h3>
+
+        <label for="transactionType">Type of Transaction:</label><br>
+        <select id="transactionType" name="transactionType" required>
+            <option value="deposit">Deposit</option>
+            <option value="withdrawal">Withdrawal</option>
+            <option value="transfer">Transfer</option>
+            <option value="payment">Payment</option>
+        </select><br><br>
+
+        <label for="amount">Amount:</label><br>
+        <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+
+        <label for="currency">Currency:</label><br>
+        <select id="currency" name="currency" required>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="inr">INR</option>
+        </select><br><br>
+
+        <label for="transactionDate">Date of Transaction:</label><br>
+        <input type="date" id="transactionDate" name="transactionDate" required><br><br>
+
+        <label for="transactionDescription">Description:</label><br>
+        <textarea id="transactionDescription" name="transactionDescription" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="attachments">Attachments (optional):</label><br>
+        <input type="file" id="attachments" name="attachments"><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Transaction">
+    </form>
+
+</body>
+</html>

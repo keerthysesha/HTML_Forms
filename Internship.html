@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+</head>
+<body>
+
+    <h2>Internship Application Form</h2>
+    <form action="/submit_internship" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Educational Background Section -->
+        <h3>Educational Background</h3>
+
+        <label for="institution">Institution Name:</label><br>
+        <input type="text" id="institution" name="institution" required><br><br>
+
+        <label for="course">Course/Branch:</label><br>
+        <input type="text" id="course" name="course" required><br><br>
+
+        <label for="yearOfStudy">Year of Study:</label><br>
+        <input type="number" id="yearOfStudy" name="yearOfStudy" required><br><br>
+
+        <label for="gpa">GPA/Percentage:</label><br>
+        <input type="text" id="gpa" name="gpa" required><br><br>
+
+        <!-- Internship Details Section -->
+        <h3>Internship Details</h3>
+
+        <label for="desiredDepartment">Desired Department/Field:</label><br>
+        <input type="text" id="desiredDepartment" name="desiredDepartment" required><br><br>
+
+        <label for="availability">Availability (Start and End Date):</label><br>
+        <input type="date" id="startDate" name="startDate" required> to
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <label for="whyInternship">Why are you interested in this internship?</label><br>
+        <textarea id="whyInternship" name="whyInternship" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="skills">Relevant Skills:</label><br>
+        <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="resume">Resume (Upload link or specify file):</label><br>
+        <input type="text" id="resume" name="resume" placeholder="Link to resume or specify file" required><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Application">
+    </form>
+
+</body>
+</html>

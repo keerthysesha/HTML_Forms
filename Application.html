@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <h2>Application Form</h2>
+    <form enctype="multipart/form-data">
+        <h3>Personal Information</h3>
+
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <h3>Contact Information</h3>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <h3>Educational Background</h3>
+
+        <label for="highSchool">High School:</label><br>
+        <input type="text" id="highSchool" name="highSchool" required><br><br>
+
+        <label for="graduationYear">Year of Graduation:</label><br>
+        <input type="number" id="graduationYear" name="graduationYear" required><br><br>
+
+        <label for="gpa">GPA:</label><br>
+        <input type="number" id="gpa" name="gpa" step="0.01" required><br><br>
+
+        <h3>Course Application</h3>
+
+        <label for="course">Course Applied For:</label><br>
+        <select id="course" name="course" required>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+        </select><br><br>
+
+        <label for="motivation">Motivation for Applying:</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

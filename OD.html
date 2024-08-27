@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OD (On-Duty) Form</title>
+</head>
+<body>
+
+    <h2>OD (On-Duty) Form</h2>
+    <form action="/submit_od" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="idNumber">ID Number/Employee ID:</label><br>
+        <input type="text" id="idNumber" name="idNumber" required><br><br>
+
+        <label for="department">Department/Section:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- OD Details Section -->
+        <h3>OD Details</h3>
+
+        <label for="purpose">Purpose of OD:</label><br>
+        <textarea id="purpose" name="purpose" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="startDate">OD Start Date:</label><br>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">OD End Date:</label><br>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <label for="location">Location of OD:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit OD Request">
+    </form>
+
+</body>
+</html>

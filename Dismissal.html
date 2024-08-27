@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dismissal Form</title>
+</head>
+<body>
+
+    <h2>Dismissal Form</h2>
+    <form action="/submit_dismissal" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="employeeId">Employee/Student ID:</label><br>
+        <input type="text" id="employeeId" name="employeeId" required><br><br>
+
+        <label for="position">Position/Grade:</label><br>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Dismissal Details Section -->
+        <h3>Dismissal Details</h3>
+
+        <label for="dismissalDate">Date of Dismissal:</label><br>
+        <input type="date" id="dismissalDate" name="dismissalDate" required><br><br>
+
+        <label for="dismissalReason">Reason for Dismissal:</label><br>
+        <textarea id="dismissalReason" name="dismissalReason" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="effectiveDate">Effective Date of Dismissal:</label><br>
+        <input type="date" id="effectiveDate" name="effectiveDate" required><br><br>
+
+        <label for="finalSettlement">Final Settlement Status:</label><br>
+        <select id="finalSettlement" name="finalSettlement" required>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select><br><br>
+
+        <!-- Supervisor/Manager Information Section -->
+        <h3>Supervisor/Manager Information</h3>
+
+        <label for="supervisorName">Supervisor/Manager's Name:</label><br>
+        <input type="text" id="supervisorName" name="supervisorName" required><br><br>
+
+        <label for="supervisorEmail">Supervisor/Manager's Email:</label><br>
+        <input type="email" id="supervisorEmail" name="supervisorEmail" required><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Comments (optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Dismissal">
+    </form>
+
+</body>
+</html>

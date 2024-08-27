@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Form</title>
+</head>
+<body>
+
+    <h2>Eligibility Form</h2>
+    <form action="/submit_eligibility" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Eligibility Criteria Section -->
+        <h3>Eligibility Criteria</h3>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="citizenship">Citizenship Status:</label><br>
+        <select id="citizenship" name="citizenship" required>
+            <option value="citizen">Citizen</option>
+            <option value="permanent_resident">Permanent Resident</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="educationLevel">Highest Level of Education:</label><br>
+        <select id="educationLevel" name="educationLevel" required>
+            <option value="high_school">High School</option>
+            <option value="associate_degree">Associate Degree</option>
+            <option value="bachelor_degree">Bachelor's Degree</option>
+            <option value="master_degree">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="income">Annual Income:</label><br>
+        <input type="number" id="income" name="income" step="0.01" required><br><br>
+
+        <label for="employmentStatus">Employment Status:</label><br>
+        <select id="employmentStatus" name="employmentStatus" required>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="retired">Retired</option>
+        </select><br><br>
+
+        <label for="criteria1">Do you meet Criterion 1?</label>
+        <input type="checkbox" id="criteria1" name="criteria1"><br><br>
+
+        <label for="criteria2">Do you meet Criterion 2?</label>
+        <input type="checkbox" id="criteria2" name="criteria2"><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Comments (optional):</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Eligibility">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Form</title>
+</head>
+<body>
+
+    <h2>Deposit Form</h2>
+    <form action="/submit_deposit" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="accountNumber">Account Number:</label><br>
+        <input type="text" id="accountNumber" name="accountNumber" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <!-- Deposit Details Section -->
+        <h3>Deposit Details</h3>
+
+        <label for="depositAmount">Deposit Amount:</label><br>
+        <input type="number" id="depositAmount" name="depositAmount" step="0.01" required><br><br>
+
+        <label for="depositDate">Date of Deposit:</label><br>
+        <input type="date" id="depositDate" name="depositDate" required><br><br>
+
+        <label for="depositMethod">Method of Deposit:</label><br>
+        <select id="depositMethod" name="depositMethod" required>
+            <option value="cash">Cash</option>
+            <option value="cheque">Cheque</option>
+            <option value="transfer">Bank Transfer</option>
+        </select><br><br>
+
+        <label for="depositDescription">Description (optional):</label><br>
+        <textarea id="depositDescription" name="depositDescription" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Deposit">
+    </form>
+
+</body>
+</html>

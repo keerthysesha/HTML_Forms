@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+</head>
+<body>
+
+    <h2>Donation Form</h2>
+    <form action="/submit_donation" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Donation Details Section -->
+        <h3>Donation Details</h3>
+
+        <label for="donationAmount">Donation Amount:</label><br>
+        <input type="number" id="donationAmount" name="donationAmount" step="0.01" required><br><br>
+
+        <label for="donationDate">Date of Donation:</label><br>
+        <input type="date" id="donationDate" name="donationDate" required><br><br>
+
+        <label for="donationMethod">Method of Donation:</label><br>
+        <select id="donationMethod" name="donationMethod" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select><br><br>
+
+        <label for="donationPurpose">Purpose of Donation:</label><br>
+        <textarea id="donationPurpose" name="donationPurpose" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="anonymous">Donate Anonymously:</label>
+        <input type="checkbox" id="anonymous" name="anonymous"><br><br>
+
+        <!-- Additional Comments Section -->
+        <h3>Additional Comments</h3>
+
+        <label for="comments">Comments (optional):</labe

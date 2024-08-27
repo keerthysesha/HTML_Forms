@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+</head>
+<body>
+
+    <h2>Leave Application Form</h2>
+    <form action="/submit_leave" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="employeeID">Employee ID:</label><br>
+        <input type="text" id="employeeID" name="employeeID" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Leave Details Section -->
+        <h3>Leave Details</h3>
+
+        <label for="leaveType">Type of Leave:</label><br>
+        <select id="leaveType" name="leaveType" required>
+            <option value="sick">Sick Leave</option>
+            <option value="casual">Casual Leave</option>
+            <option value="annual">Annual Leave</option>
+            <option value="maternity">Maternity Leave</option>
+            <option value="paternity">Paternity Leave</option>
+        </select><br><br>
+
+        <label for="startDate">Leave Start Date:</label><br>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">Leave End Date:</label><br>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <label for="reason">Reason for Leave:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Leave Request">
+    </form>
+
+</body>
+</html>

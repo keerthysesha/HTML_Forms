@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out-Patient Form</title>
+</head>
+<body>
+
+    <h2>Out-Patient Form</h2>
+    <form action="/submit_op" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Medical Details Section -->
+        <h3>Medical Details</h3>
+
+        <label for="doctor">Doctor's Name:</label><br>
+        <input type="text" id="doctor" name="doctor" required><br><br>
+
+        <label for="visitDate">Date of Visit:</label><br>
+        <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+        <label for="symptoms">Symptoms:</label><br>
+        <textarea id="symptoms" name="symptoms" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="medicalHistory">Medical History (if any):</label><br>
+        <textarea id="medicalHistory" name="medicalHistory" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

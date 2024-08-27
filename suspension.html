@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspension Form</title>
+</head>
+<body>
+
+    <h2>Suspension Form</h2>
+    <form action="/submit_suspension" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="employeeId">Employee/Student ID:</label><br>
+        <input type="text" id="employeeId" name="employeeId" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <!-- Suspension Details Section -->
+        <h3>Suspension Details</h3>
+
+        <label for="suspensionReason">Reason for Suspension:</label><br>
+        <textarea id="suspensionReason" name="suspensionReason" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="startDate">Start Date of Suspension:</label><br>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">End Date of Suspension:</label><br>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <label for="suspensionType">Type of Suspension:</label><br>
+        <select id="suspensionType" name="suspensionType" required>
+            <option value="temporary">Temporary</option>
+            <option value="permanent">Permanent</option>
+        </select><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Suspension">
+    </form>
+
+</body>
+</html>

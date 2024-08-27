@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Passbook Application Form</title>
+</head>
+<body>
+
+    <h2>Bank Passbook Application Form</h2>
+    <form action="/submit_passbook_application" method="post">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <h3>Address Information</h3>
+
+        <label for="address">Residential Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <h3>Bank Account Details</h3>
+
+        <label for="accountNumber">Account Number:</label><br>
+        <input type="text" id="accountNumber" name="accountNumber" required><br><br>
+
+        <label for="branchName">Branch Name:</label><br>
+        <input type="text" id="branchName" name="branchName" required><br><br>
+
+        <label for="ifscCode">IFSC Code:</label><br>
+        <input type="text" id="ifscCode" name="ifscCode" required><br><br>
+
+        <label for="accountType">Account Type:</label><br>
+        <select id="accountType" name="accountType" required>
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+            <option value="fixed">Fixed Deposit</option>
+            <option value="recurring">Recurring Deposit</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

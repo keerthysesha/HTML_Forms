@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Card Application Form</title>
+</head>
+<body>
+
+    <h2>Aadhaar Card Application Form</h2>
+    <form enctype="multipart/form-data">
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="maritalStatus">Marital Status:</label><br>
+        <select id="maritalStatus" name="maritalStatus" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select><br><br>
+
+        <h3>Contact Information</h3>
+
+        <label for="address">Residential Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email (optional):</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <h3>Identification Details</h3>
+
+        <label for="identityProof">Identity Proof:</label><br>
+        <select id="identityProof" name="identityProof" required>
+            <option value="pan">PAN Card</option>
+            <option value="voter">Voter ID</option>
+            <option value="passport">Passport</option>
+            <option value="driving">Driving License</option>
+            <option value="ration">Ration Card</option>
+        </select><br><br>
+
+        <label for="idNumber">Identity Proof Number:</label><br>
+        <input type="text" id="idNumber" name="idNumber" required><br><br>
+
+        <label for="photo">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <label for="signature">Upload Signature:</label><br>
+        <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

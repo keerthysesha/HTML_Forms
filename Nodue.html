@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-Due Certificate Form</title>
+</head>
+<body>
+
+    <h2>No-Due Certificate Form</h2>
+    <form action="/submit_no_due" method="post">
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="rollNo">Roll Number/Employee ID:</label><br>
+        <input type="text" id="rollNo" name="rollNo" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Request Details Section -->
+        <h3>Request Details</h3>
+
+        <label for="reason">Reason for Request:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="date">Date of Request:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!-- Additional Information Section -->
+        <h3>Additional Information</h3>
+
+        <label for="additionalInfo">Additional Information (optional):</label><br>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submission Section -->
+        <input type="submit" value="Submit Request">
+    </form>
+
+</body>
+</html>
